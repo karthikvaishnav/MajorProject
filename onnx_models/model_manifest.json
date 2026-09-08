@@ -1,0 +1,27 @@
+{
+  "onnx_export_status": "COMPLETED",
+  "audio_model": "onnx_models\\audio_detector_quantized.onnx",
+  "fusion_model": "onnx_models\\cross_modal_fusion_quantized.onnx",
+  "input_shapes": {
+    "mel_spectrogram": [
+      1,
+      1,
+      128,
+      126
+    ],
+    "audio_emb": [
+      1,
+      128
+    ],
+    "text_emb": [
+      1,
+      128
+    ],
+    "behavior_emb": [
+      1,
+      64
+    ]
+  },
+  "quantization": "int8_dynamic",
+  "target_latency_ms": 6.85
+}
